@@ -1,4 +1,4 @@
-/* Global Chart */
+/* global Chart */
 
 export function ajoutListenerAvis () {
     const btnAvis = document.querySelectorAll(".btn-avis");
@@ -15,7 +15,7 @@ export function ajoutListenerAvis () {
             if (avisEncache) {
                 avis = JSON.parse(avisEncache);
             } else {
-                const response = await fetch(`http://api-pieces.onrender.com/pieces/${id}/avis`);
+                const response = await fetch(`https://api-pieces.onrender.com/pieces/${id}/avis`);
                 avis = await response.json();
                 window.localStorage.setItem(`avis-piece-${id}`, JSON.stringify(avis));
             }
