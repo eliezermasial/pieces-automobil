@@ -1,11 +1,43 @@
-# 7697016-Front-End.1
+# 🛠️ API Pièces – Frontend + Backend JSON Server
 
-Code base du fil rouge pour le cours OpenClassrooms [Créez des pages web dynamiques avec JavaScript](https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript)
+Ce projet est une démonstration d'une application frontend qui consomme une API REST simulée avec `json-server`, hébergée sur [Render.com](https://render.com). Elle permet d'afficher des pièces électroniques et leurs avis utilisateurs de façon interactive.
 
-## Installation
+---
 
-Après avoir cloné le repo vous avez plusieurs options pour lancer le projet. 
+## 🚀 Fonctionnalités
 
-Si vous utiliser VSCode ou un autre éditeur de code avec une extersion de serveur web comme live server, vous pouvez lancer direcement votre site avec l'extension que vous utilisez habituellement. 
+- Affichage dynamique des pièces depuis l'API.
+- Chargement des avis pour chaque pièce au clic.
+- Mise en cache locale des avis via `localStorage`.
+- API auto-déployée sur Render à partir d’un fichier `db.json`.
 
-Dans le cas contraire vous pouvez installer les dépendances de ce projet avec `npm install` puis lancer le projet via la commande `npm start`. Vous verrez dans le termninal le lien vers le site (par defaut http://127.0.0.1:8080 )
+---
+
+## 📦 Technologies utilisées
+
+### Backend
+- [`json-server`](https://github.com/typicode/json-server) – pour simuler une API REST à partir de `db.json`.
+- [Render.com](https://render.com) – pour déployer l’API gratuitement en ligne.
+
+### Frontend
+- HTML/CSS/JavaScript Vanilla
+- `fetch` API pour la communication avec le serveur
+- `localStorage` pour le caching des données
+
+---
+
+## 🌐 API publique
+
+L’API est disponible à cette adresse :  
+👉 [`https://api-pieces.onrender.com`](https://api-pieces.onrender.com)
+
+### Endpoints disponibles
+
+- `GET /pieces` : Liste toutes les pièces
+- `GET /pieces/:id` : Récupère une pièce spécifique
+- `GET /avis?pieceId=:id` : Avis d’une pièce
+
+---
+
+## 📁 Structure du projet
+
