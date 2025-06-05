@@ -1,4 +1,4 @@
-
+import { ajoutListenerAvis, ajoutListernerEnvoyerAvis, afficherGraphiqueAvis } from "./avis.js";
 
 const loader = document.getElementById("loading");
 const sectionFiltres = document.querySelector(".filtres");
@@ -42,7 +42,7 @@ function displayPieces (pieces) {
         sectionFiches.appendChild(block);
     }
 
-    
+    ajoutListenerAvis();
 }
 
 // Fonction pour filtrer les pièces non abordables
@@ -263,7 +263,8 @@ async function init () {
             arrangerpieces(pieces,btnRanger);
         })
 
-        
+        ajoutListernerEnvoyerAvis();
+        await afficherGraphiqueAvis();// Affiche le graphique des avis
 
         const Banner = document.getElementById("cookieBanner");
         const btnAcceptCookie = document.getElementById("acceptCookie");
