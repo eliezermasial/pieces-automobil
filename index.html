@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Les Bonnes Pièces</title>
+		<link rel="stylesheet" href="styles.css">
+		<script type="module" src="pieces.js"></script>
+		<script src="node_modules/chart.js/dist/chart.umd.js" defer></script>
+
+	</head>
+	<body>
+		<header>
+			<img src="images/logo-les-bonnes-pieces.png" alt="LOGO">
+			<h1>Les Bonnes Pièces</h1>
+			<button id="darkModeToggle">Mode Sombre</button>
+		</header>
+		<main>
+			<!-- Menu de recherche -->
+			<section class="filtres">
+				<h3>Filtres</h3>
+				<div class="btns-filtres">
+					<button id="btn-sort" class="btn">arrangement des pieces</button>
+					<button id="btn-filtre" class="btn" type="submit">produit non abordable</button>
+				</div>
+				<input type="range" id="inputRange" class="input-range" min="0" max="500" step="5" value="250">
+				<div>
+					<h3>Ajouter un avis</h3>Add commentMore actions
+					<form class="formulaire-avis">
+						Identifiant de la pièce :<br>
+						<input type="number" name="piece-id"><br>
+						Nom d'utilisateur :<br>
+						<input type="text" name="utilisateur"><br>
+						Avis :<br>
+						<input type="text" name="commentaire"><br>
+						Etoile: <br>
+						<input type="number" name="nb-etoiles" min="1" max="5"><br>
+						<button>Envoyer</button>
+					</form>
+				</div>
+				<div id="piecs-filtres" class="piecs-filtres"></div>
+				<div>
+					<h3>Aperçu des avis</h3>
+					<canvas id="graphique-avis" width="300" height="300"></canvas>
+				</div>
+			</section>
+
+			<!-- Fiches produits -->
+			<section class="fiches"></section>
+			<div id="loading">
+				<div class="spinner"></div>
+			</div>
+			<div class="cookie-banner" id="cookieBanner">
+				<p>Nous utilisons des cookies pour améliorer votre expérience.</p>
+				<a href="#">Voir plus</a>
+				<button id="acceptCookie">Accepter les cookies</button>
+			</div>
+		</main>
+	</body>
+</html>
