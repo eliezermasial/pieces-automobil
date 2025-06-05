@@ -205,7 +205,7 @@ async function init () {
             pieces = JSON.parse(cache);  
         }
         else {
-            const response= await fetch(`https://api-pieces.onrender.com/pieces`);//https://api-pieces.onrender.com/pieces
+            const response= await fetch(`http://api-pieces.onrender.com/pieces`);
             pieces = await response.json();
             window.localStorage.setItem("pieces", JSON.stringify(pieces));
         }
@@ -263,9 +263,6 @@ async function init () {
             arrangerpieces(pieces,btnRanger);
         })
 
-        ajoutListernerEnvoyerAvis();
-        await afficherGraphiqueAvis();// Affiche le graphique des avis
-
         const Banner = document.getElementById("cookieBanner");
         const btnAcceptCookie = document.getElementById("acceptCookie");
         const accepted = getCookie("cookieAccepted") === "true";
@@ -287,6 +284,9 @@ async function init () {
             })
         }
 
+        ajoutListernerEnvoyerAvis(); // Ajoute le listener pour envoyer les avis
+        await afficherGraphiqueAvis();// Affiche le graphique des avis
+        
     } catch (error) {
         return "erreur de charhement:", error;
     }
