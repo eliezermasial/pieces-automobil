@@ -1,0 +1,88 @@
+[
+    {
+        "id": 1,
+        "nom": "Ampoule LED",
+        "prix": 60,
+        "categorie": "Optiques",
+        "image": "/images/logo-les-bonnes-pieces.png",
+        "description": "Ampoule LED haute performance pour un éclairage optimal."
+    },
+    {
+        "id": 2,
+        "nom": "Plaquettes de frein (x4)",
+        "prix": 40,
+        "categorie": "Freinage",
+        "image": "/images/plaquettes-frein.jpg",
+        "description": "Plaquettes de frein de haute qualité pour une sécurité accrue."
+    },
+    {
+        "id": 3,
+        "nom": "Ampoule boîte à gants",
+        "prix": 87.49,
+        "image": "/images/ampoule-gant.jpg",
+        "description": "Ampoule de rechange pour la boîte à gants."
+    },
+    {
+        "id": 4,
+        "nom": "Liquide de frein",
+        "prix": 9.60,
+        "categorie": "Freinage",
+        "image": "/images/liquide-frein.jpg",
+        "description": "Liquide de frein de haute performance pour un freinage optimal."
+    },
+    {
+        "id": 5,
+        "nom": "Balai d'essuie-glace",
+        "prix": 109.10,
+        "categorie": "Essuie-glaces",
+        "image": "/images/balai-essuie-glace.jpg",
+        "description": "Balai d'essuie-glace de haute qualité pour une visibilité optimale."
+    },
+    {
+        "id": 6,
+        "nom": "Ampoule de phare",
+        "prix": 15.99,
+        "image": "/images/ampoule-phare.jpg",
+        "description": "Ampoule de phare pour une meilleure visibilité nocturne."
+    },
+    {
+        "id": 7,
+        "nom": "Disques de frein (x2)",
+        "prix": 320,
+        "image": "/images/disques-frein.jpg",
+        "description": "Disques de frein de haute performance pour un freinage efficace."
+    },
+    {
+        "id": 8,
+        "nom": "Liquide lave-glace",
+        "prix": 10.50,
+        "categorie": "Essuie-glaces",
+        "image": "/images/liquide-lave-glace.jpg",
+        "description": "Liquide lave-glace concentré pour une propreté optimale."
+    },
+    {
+        "id": 9,
+        "nom": "Balai d'essuie-glace arrière",
+        "prix": 19.99,
+        "categorie": "Essuie-glaces",
+        "image": "/images/balai-essuie-glace-arriere.jpg",
+        "description": "Balai d'essuie-glace arrière pour une visibilité optimale."
+    },
+    {
+        "id": 10,
+        "nom": "Filtre à huile",
+        "prix": 420.50,
+        "categorie": "Moteur",
+        "image": "/images/filtre-huile.jpg",
+        "description": "Filtre à huile de haute qualité pour un moteur propre et performant."
+    },
+    
+    {
+        "id": 11,
+        "nom": "huile olive",
+        "prix": 20.02,
+        "categorie": "Moteur",
+        "image": "/images/filtre-huile.jpg",
+        "description": "Filtre à huile de haute qualité pour un moteur propre et performant."
+    }
+]
